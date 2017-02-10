@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Data Try</title>
+	</head>
+	<body>
+		<h1 align="center">ACCOUNTING TABLE</h1>
+		<p align="center">JM PLUS new system</p>
+		<br>
+		<br>
+		<br>
+		<div class="records" align="center">
+			<h3>Records Table</h1>
+			<hr>
+			<!-- <div id="records"></div> -->
+
+
+			<h3>Daily Table</h1>
+			<hr>
+			<div id="daily"></div>
+
+
+		</div>
+		<div class="todolist">
+			<hr/>
+		<ul id="listitem"></ul>
+	</div>
+	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script> -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<!-- 	<script>
+		var template = "<tr><td class='{{class}}'> {{num}}. {{key}}</td> <td>{{date}}</td> <td>{{account}}</td> <td>{{item}}</td> <td>{{money}}</td> <td>{{note1}}</td><td>{{note2}}</td></tr>";
+		var records;
+		var records_url = "data/records.json"
+		$.ajax({
+		url: records_url,
+		success: function(res) {
+		records = JSON.parse(res)
+
+		for (var i = 0; i < records.length; i++) {
+		var item = records[i]
+		var now_class = (item.done == true) ? "done" : "";
+		// var now_class="";
+		// if(item.done==true){
+		//   now_class="done";
+		// }
+		var now_item = template.replace("{{key}}", item.Key)
+								.replace("{{num}}", i + 1)
+								.replace("{{date}}", item.日期)
+								.replace("{{account}}", item.科目)
+								.replace("{{item}}", item.項目)
+								.replace("{{money}}", item.金額)
+								.replace("{{note1}}", item.備註1)
+								.replace("{{note2}}", item.備註2)
+								.replace("{{class}}", now_class);
+		$("#records").append(now_item);
+		}
+		}
+		})
+	</script> -->
+
+
+	    <!-- DATA TABLE -->
+    <script>
+      var template = "<tr><td class='{{class}}'> {{num}}. {{key}}</td> <td>{{date}}</td> <td>{{account}}</td> <td>{{item}}</td> <td>{{money}}</td> <td>{{note1}}</td><td>{{note2}}</td></tr>";
+
+      // var thead_temp = "<tr><th>{{thead}}</th></tr> "
+      var records;
+      var records_url = "data/records.json"
+      $.ajax({
+        url: records_url,
+        success: function(res) {
+
+        $("#daily").append("<thead><tr><th>Key</th><th>日期</th><th>科目</th><th>項目</th><th>金額</th><th>備註1</th><th>備註2</th><th>編輯</th></tr></thead>");    
+        // $("#daily").append("<thead><tr>");
+
+        // for (var i = 0; i < records[0].length;i++){
+        //   var thead = records[0][i]
+        //   var head_item = thead_temp.replace("{{thead}}", thead)
+        //   $("#daily").append(head_item);
+        // }
+
+        // $("#daily").append("</tr></thead>");
+        $("#daily").append("<tbody>");      
+
+        records = JSON.parse(res)
+
+        for (var i = 0; i < records.length; i++) {
+          var item = records[i]
+          var now_class = (item.done == true) ? "done" : "";
+          // var now_class="";
+          // if(item.done==true){
+          //   now_class="done";// 
+          var now_item = template.replace("{{key}}", item.Key)
+                      .replace("{{num}}", i + 1)
+                      .replace("{{date}}", item.日期)
+                      .replace("{{account}}", item.科目)
+                      .replace("{{item}}", item.項目)
+                      .replace("{{money}}", item.金額)
+                      .replace("{{note1}}", item.備註1)
+                      .replace("{{note2}}", item.備註2)
+                      .replace("{{class}}", now_class);
+          $("#daily").append(now_item);
+        }
+
+        $("#daily").append("</tbody>");  
+      }
+      })
+    </script>
+
+	<script>
+		var item_temp = "<li class='{{class}}'>{{num}}.{{name}}({{date}})</li>";
+		var data_url = "http://www.monoame.com/awi_class/api/command.php?type=get&name=tododata";
+		var tododata;
+		$.ajax({
+		url: data_url,
+		success: function(res) {
+		tododata = JSON.parse(res);
+		for (var i = 0; i < tododata.length; i++) {
+		var item = tododata[i]
+		var now_class = (item.done == true) ? "done" : "";
+		// var now_class="";
+		// if(item.done==true){
+		//   now_class="done";
+		// }
+		var now_item = item_temp.replace("{{name}}", item.name)
+		.replace("{{num}}", i + 1)
+		.replace("{{date}}", item.date)
+		.replace("{{class}}", now_class);
+		$("#listitem").append(now_item);
+		}
+		}
+		})
+	</script>
+</body>
+</html>

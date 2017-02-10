@@ -1,0 +1,161 @@
+* {
+  // border: solid 1px black
+  position: relative
+  //let everything can be position
+  font-family: 微軟正黑體
+  vertical-align: top
+
+}
+  
+html,body {
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 20px
+  background-color: #222
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+}
+  
+
+.phone {
+  width: 210px
+  padding: 10px
+  background-color: #F2F2F2
+  border-radius: 12px
+  transition-duration: 0.7s
+  left: 0
+ 
+}
+ 
+.top {
+  height: 50px
+  .camera {
+    width: 10px
+    height: 10px
+    border-radius: 100%
+    background-color: #333
+    position: absolute
+    left: 50%
+    top: 49%
+    transform: translate(-50%,-50%)
+  }
+}
+.screen {
+  height: 320px{
+  transition: 0.6s
+  overflow: hidden
+  .pages
+    background-color: #333
+    width: 100%
+    height: 100%
+    white-space: nowrap
+    //讓他不要換行
+    font-size: 0px
+    //頁面之間的也有算字大小
+    .page
+      font-size: initial
+      display: inline-block
+      background-color: #333
+      width: 100%
+      height: 100%
+      transition: 0.6s
+      padding: 15px
+      left: 0
+      box-sizing: border-box
+      //內縮padding
+      position: relative
+      //下面才能定位得到
+      white-space: normal
+      color: #eee
+      font-size: 11px
+      p
+        margin-top: 24px
+      h2
+        color: #333
+        font-size: 20px
+        margin: 0
+      &:before
+        position: absolute
+        left: 0
+        top: 0
+        content: ""
+        display: block
+        background-color: #ffac36
+        width: 100%
+        height: 48px
+      
+      &:after
+        position: absolute
+        left: 0
+        bottom: 0
+        content: ""
+        display: block
+        background-color: #ffac36
+        width: 100%
+        height: 20px
+        
+    .page1
+      background-color: #ffac36
+      color: #333
+      h2
+        font-size: 15px
+        margin-bottom: 0px
+      h1
+        font-size: 30
+        margin-top: 0px
+      .cat
+        width: 300px
+        height: 300px
+        background-color: lightblue
+        border-radius: 100%
+    }
+}  
+      
+.bottom
+  height: 60px
+  
+  .button
+    width: 40px
+    height: 40px
+    border-radius: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    text-align: center
+    font-size: 29px
+    color: rgba(black,0.35)
+    border: solid 1.2px rgba(black,0.15)
+    cursor: pointer
+    &:hover
+      background-color: #ddd
+    
+  
+.status,.phonename
+  color: #fff
+  margin: 0
+
+.status
+  margin-top: 20px
+  font-size: 17px
+
+.phonename
+  margin: 10px
+
+.buttons
+  margin-top: 10px
+  button
+    //we just use default button tag
+    background-color: transparent
+    border: solid 1px rgba(#ff3,0.2)
+    color: #ff0
+    padding: 5px 10px
+    border-radius: 5px
+    cursor: pointer
+    &:hover
+      background-color: #fff
+      color: #333

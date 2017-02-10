@@ -1,0 +1,158 @@
+*
+  // border: solid 1px black
+  position: relative
+  //let everything can be position
+  font-family: 微軟正黑體
+  vertical-align: top
+
+html,body
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 20px
+  background-color: #222
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+
+  
+  
+img
+  width: 100%
+  height: auto
+  align-items: center
+  padding-top: 23%
+
+.brand
+  left: 0px
+  font-size: 30px
+  text-align: center
+  color: white
+  position: absolute
+  .name
+    font-size: 25px
+    color: rgba(255,255,255,.75)
+    width: 175px
+    height: 60px
+    margin: 5px
+    text-align: left
+    background-color: rgba(0,0,0,0.8)
+    // border: solid 3px #222
+    padding: 10px
+    cursor: pointer
+    &:hover
+      color: white
+      background-color: rgba(222,222,222,0.3)
+      border: solid 3px rgba(255,0,0,0.6)
+
+.custom
+  right: 0px
+  font-size: 30px
+  text-align: center
+  color: white
+  position: absolute
+  cursor: pointer
+  .name
+    display: block
+    font-size: 25px
+    color: rgba(255,255,255,.75)
+    width: 175px
+    height: px
+    margin: 5px
+    text-align: left
+    background-color: rgba(0,0,0,0.8)
+    // border: solid 3px #222
+    padding: 10px
+
+    .options
+      display: none
+    
+    .optionshow
+      display: inline-block
+      font-size: 21px
+      transition: 0.2s
+      .nail
+        width: 35px
+        height: 35px
+        margin: 10px
+        img
+          top: -7px
+          width: 40px
+          height: auto
+      p
+        display: none
+        &:hover
+          background-color: rgba(255,255,255,0.3)
+      
+    &:hover
+      color: white
+      // background-color: rgba(222,222,222,0.9)
+      // border: solid 3px rgba(255,0,0,0.6)
+      .cusname 
+        border-bottom: solid 1px white
+      .options
+        // display: inline-block
+        
+
+
+  
+  
+.earphone
+  margin: 20px
+  width: 450px
+  height: 450px
+  padding: 10px
+  background-color: rgb(200,200,200)
+  border-radius: 12px
+  transition-duration: 0.7s
+  left: 0
+  
+.botton
+  height: 60px
+  
+  .button
+    width: 40px
+    height: 40px
+    border-radius: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    text-align: center
+    font-size: 29px
+    color: rgba(black,0.35)
+    border: solid 1.2px rgba(black,0.15)
+    cursor: pointer
+    &:hover
+      background-color: #ddd
+
+  
+.status,.brandname
+  color: #fff
+  margin: 0
+
+.status
+  margin-top: 20px
+  font-size: 17px
+
+.brandname
+  margin: 10px
+
+.btn-group
+  margin-top: 10px
+
+  button
+    //we just use default button tag
+    background-color: transparent
+    border: solid 1px rgba(#ff3,0.2)
+    color: #ff0
+    padding: 5px 10px
+    border-radius: 5px
+    cursor: pointer
+    &:hover
+      background-color: #fff
+      color: #333
+    
+

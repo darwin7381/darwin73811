@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JM-PLUS Graph API</title>
+</head>
+<body>
+	<h1 class="cat">Graph API</h1>
+	<div class="show">Show</div>
+	<div class="show1">S</div>
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="graph.css">
+
+  	<script>
+    $(".cat").click(function() {
+		FB.api(
+		  '/343170759195746/',
+		  'GET',
+		  {"fields":"posts{message,likes{id},shares,comments{id}}"},
+		  function(response) {
+		       $("show").html(response)
+		  }
+		);
+  </script>
+</body>
+</html>

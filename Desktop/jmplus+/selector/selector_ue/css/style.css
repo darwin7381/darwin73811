@@ -1,0 +1,340 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: 微軟正黑體;
+  vertical-align: top;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding-top: 21%;
+}
+
+.brand {
+  left: 0px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  position: absolute;
+}
+.brand .name {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.75);
+  width: 175px;
+  height: 60px;
+  margin: 5px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  cursor: pointer;
+}
+.brand .name:hover {
+  color: white;
+  background-color: rgba(222, 222, 222, 0.3);
+  border: solid 3px rgba(255, 0, 0, 0.6);
+}
+
+.custom {
+  right: 0px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+}
+.custom .name {
+  display: block;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.75);
+  width: 175px;
+  height: px;
+  margin: 5px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.custom .name .side {
+  display: none;
+}
+.custom .name .sideshow {
+  display: inline-block;
+  margin: 1px;
+  margin-top: 5px;
+  padding: 5px;
+  border: solid 1px rgba(255, 0, 0, 0);
+  padding-left: 15px;
+  padding-right: 20px;
+  position: relative;
+  top: 0px;
+}
+.custom .name .sideon {
+  background-color: rgba(0, 222, 222, 0.5);
+  border: solid 1px rgba(255, 0, 0, 0.6);
+}
+.custom .name .sideon .left {
+  position: absolute;
+}
+.custom .name .sideon .right {
+  position: absolute;
+}
+.custom .name .options {
+  display: none;
+}
+.custom .name .optionshow {
+  display: inline-block;
+  font-size: 21px;
+  transition: 0.2s;
+}
+.custom .name .optionshow:hover {
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+.custom .name .optionshow .nail {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+.custom .name .optionshow .nail img {
+  top: -7px;
+  width: 40px;
+  height: auto;
+}
+.custom .name .optionshow p {
+  display: none;
+}
+.custom .name:hover {
+  color: white;
+}
+.custom .name:hover .cusname {
+  border-bottom: solid 1px white;
+}
+
+.earphone {
+  position: relative;
+  margin: 20px;
+  top: 13%;
+  width: 500px;
+  height: 450px;
+  padding: 10px;
+  background-color: #c8c8c8;
+  border-radius: 12px;
+  transition-duration: 0.7s;
+  left: 0;
+}
+.earphone .leftphone {
+  position: absolute;
+  display: none;
+  margin: 0;
+  width: 250px;
+  height: 450px;
+  left: 0;
+  top: 0;
+  background-color: #c8c8c8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.earphone .leftphone #leftphone {
+  width: 480px;
+  height: auto;
+  margin: 0;
+  top: 13%;
+  left: 10px;
+  position: absolute;
+}
+.earphone .rightphone {
+  position: absolute;
+  display: none;
+  margin: 0;
+  width: 250px;
+  height: 450px;
+  right: 0;
+  top: 0;
+  background-color: #c8c8c8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.earphone .rightphone #rightphone {
+  width: 480px;
+  height: auto;
+  margin: 0;
+  top: 13%;
+  right: 10px;
+  position: absolute;
+}
+
+.botton {
+  height: 60px;
+}
+.botton .button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 29px;
+  color: rgba(0, 0, 0, 0.35);
+  border: solid 1.2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.botton .button:hover {
+  background-color: #ddd;
+}
+
+.status, .brandname {
+  top: -2%;
+  color: #4F5270;
+  margin: 0;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.status {
+  top: -1%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.brandname {
+  margin: 10px;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+.btn-group button {
+  background-color: transparent;
+  border: solid 1px rgba(255, 255, 51, 0.2);
+  color: #ff0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-group button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.le-custom {
+  top: 90%;
+  right: 50%;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+}
+.le-custom .le-name {
+  display: block;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.75);
+  width: 175px;
+  height: px;
+  margin: 5px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.le-custom .le-name .le-options {
+  display: none;
+}
+.le-custom .le-name .le-optionshow {
+  display: inline-block;
+  font-size: 21px;
+  transition: 0.2s;
+}
+.le-custom .le-name .le-optionshow .le-nail {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+.le-custom .le-name .le-optionshow .le-nail img {
+  top: -7px;
+  width: 40px;
+  height: auto;
+}
+.le-custom .le-name .le-optionshow p {
+  display: none;
+}
+.le-custom .le-name .le-optionshow p:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.le-custom .le-name:hover {
+  color: white;
+}
+.le-custom .le-name:hover .le-cusname {
+  border-bottom: solid 1px white;
+}
+
+.ri-custom {
+  top: 90%;
+  right: 30%;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+}
+.ri-custom .ri-name {
+  display: block;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.75);
+  width: 175px;
+  height: px;
+  margin: 5px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.ri-custom .ri-name .ri-options {
+  display: none;
+}
+.ri-custom .ri-name .ri-optionshow {
+  display: inline-block;
+  font-size: 21px;
+  transition: 0.2s;
+}
+.ri-custom .ri-name .ri-optionshow .ri-nail {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+.ri-custom .ri-name .ri-optionshow .ri-nail img {
+  top: -7px;
+  width: 40px;
+  height: auto;
+}
+.ri-custom .ri-name .ri-optionshow p {
+  display: none;
+}
+.ri-custom .ri-name .ri-optionshow p:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.ri-custom .ri-name:hover {
+  color: white;
+}
+.ri-custom .ri-name:hover .ri-cusname {
+  border-bottom: solid 1px white;
+}

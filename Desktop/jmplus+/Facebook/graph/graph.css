@@ -1,0 +1,7 @@
+.cat {
+    position: relative;
+    color: rgb(0, 0, 255);
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+}
