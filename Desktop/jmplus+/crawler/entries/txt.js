@@ -3,6 +3,8 @@ var fs = require('fs');
 var revenue = []
 var expense = []
 
+var revenue_flow = []
+
 var dash = JSON.parse(fs.readFileSync('./dash.json'));
 var duration = require('./date.js')
 
@@ -31,7 +33,7 @@ duration.get_date(startDate,endDate)
 
 //TODO read right json file
 var records = JSON.parse(fs.readFileSync('select/'+startDate+'-'+endDate+'.json', 'utf8'));
-
+// var records = JSON.parse(fs.readFileSync('select/'+startDate+'.json', 'utf8'));
 
 
 for (var i in records) {
@@ -189,5 +191,6 @@ module.exports = {
 	itemsum,
 	revenue,
 	expense,
-	cash
+	cash,
+	revenue_flow
 }
