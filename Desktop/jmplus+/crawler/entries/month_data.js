@@ -40,9 +40,6 @@ var loan_expense_avg = []
 
 
 
-date = dash.select_month
-
-
 
 startDate = dash.data_start_date
 endDate = dash.data_end_date
@@ -258,23 +255,22 @@ ef_avg = m_avg_exp
 
 
 function count_item(){
-	ef_list.push(itemsum[7]+itemsum[5]+itemsum[6])
 	cash_received_list.push(itemsum[0])
 	cf_received_list.push(itemsum[1]+itemsum[2]+itemsum[3])
 	cash_expense_list.push(itemsum[4])
 	inventory_expense_list.push(itemsum[5]+itemsum[6]+itemsum[7])
 	loan_expense_list.push(itemsum[8])
 }
-results["cash_received_list"] = []
-results["cash_received_list"] = cash_received_list
-results["cf_received_list"] = []
-results["cf_received_list"] = cf_received_list
-results["cash_expense_list"] = []
-results["cash_expense_list"] = cash_expense_list
-results["inventory_expense_list"] = []
-results["inventory_expense_list"] = inventory_expense_list
-results["loan_expense_list"] = []
-results["loan_expense_list"] = loan_expense_list
+results["cash_received"] = []
+results["cash_received"] = cash_received_list
+results["cf_received"] = []
+results["cf_received"] = cf_received_list
+results["cash_expense"] = []
+results["cash_expense"] = cash_expense_list
+results["inventory_expense"] = []
+results["inventory_expense"] = inventory_expense_list
+results["loan_expense"] = []
+results["loan_expense"] = loan_expense_list
 
 
 
@@ -298,4 +294,4 @@ results["expense_flow"] = ef_list
 
 fs.writeFileSync("results.json",JSON.stringify(results))
 
-console.log(results["cash_received_list"])
+console.log(results["cash_received"])
