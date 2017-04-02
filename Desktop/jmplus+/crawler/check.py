@@ -34,29 +34,7 @@ print(results.prettify())
 
 
 
-
-
-# file = open("source_code/test.html", 'r')
-# content = file.read()
-# print(content)
-# file.close()
-
-
-
-# file = open("source_code/test.html", 'r')
-
-# list = []
-
-# for line in file.readlines():
-# 	list.append(line)
-# print(list)
-# file.close()
-
-
-
-
-
-f = open("source_code/check.html","w") #opens file with name of "test.txt"
+f = open("check/check.html","w") #opens file with name of "test.txt"
 
 f.write(results.prettify())
 	

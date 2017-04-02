@@ -6,24 +6,21 @@ var duration = require('./date.js')
 var results = {}
 var titlename = ["1.現金收入","     票收","3.金流收入","     郵收","5.現金支出","     銀支","     卡支","8.貨款支出(票支)","9.貸款支出"]
 
-
-
-
-
 var startDate = dash.select_start_date
 var endDate = dash.select_end_date
 
 
 duration.get_date(startDate,endDate)
+
+
 var itemsum = txt.itemsum
 var revenue = txt.revenue
 var expense = txt.expense
 var cash = txt.cash
 var revenue_flow = txt.revenue_flow
 
-// for (var i = 0; i < ){
 
-// }
+
 var datadate = startDate + "-" + endDate
 
 results["duration"] = datadate
@@ -44,3 +41,6 @@ console.log(startDate,"-",endDate)
 console.log(cash)
 
 fs.writeFileSync("results.json",JSON.stringify(results))
+
+
+

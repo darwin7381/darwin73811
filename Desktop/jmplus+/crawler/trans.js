@@ -86,12 +86,13 @@ for (var i in date){
 	fs.writeFileSync(txtpath,JSON.stringify(datas));
 
 	// Write csv files
-	var csv_list = ["Key","日期","科目","項目","金額","備註1","備註2","編輯"]
-	fs.writeFileSync(csvpath, csv_list.join(',') + '\n');
-
+	// var csv_list = ["Key","日期","科目","項目","金額","備註1","備註2","編輯"]
+	// fs.writeFileSync(csvpath, csv_list.join(',') + '\n');
+	var csv_list = []
+	fs.writeFileSync(csvpath, csv_list)
 	for (var i in obj){
 		// console.log(obj[i])
-		fs.writeFileSync(csvpath, list.join(',') + '\n', { flag: 'a' });
+		fs.writeFileSync(csvpath, t_list[i].join(',') + '\n', { flag: 'a' });
 	}
 
 }
