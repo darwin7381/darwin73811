@@ -1,7 +1,9 @@
 ---
 title: Markdown練習
-date: 2017-01-23 15:55:52
-tags: Markdown
+tags:
+  - Markdown
+categories: []
+date: 2017-04-13 02:41:20
 ---
 
 ## Markdown簡介
@@ -16,6 +18,7 @@ html是一種發佈格式，Markdown是一種編寫的個是，因此Markdown格
 1. 區塊元素
     如``<div>、<table>、<pre>、<p>``等標籤，必需在前後加上空行，以利與內容區隔。
     例如：在Markdown中加入HTML表格
+<!-- more -->
 
     <table>
         <tr>
@@ -327,6 +330,8 @@ id為參考連結的名稱
 > 直接包起來
     <http://Sample.com/>
     <darwin7381987654@gmail.com>
+
+
 ### Reference
 1 [Markdown文件](http://markdown.tw)
 

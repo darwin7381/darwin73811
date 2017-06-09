@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Joey's Blog
+title: Joey's 各種筆記
 subtitle:
 description:
 author: Joey Luo
@@ -63,7 +63,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+
 theme: next
+# theme: apollo
 # theme: hexo-theme-tranquilpeak
 
 # Deployment
@@ -83,3 +85,15 @@ feed:
 keywords:
 - hexo
 - javascript
+
+# Admin
+admin:
+    name: hexo
+    password: hey
+    secret: hey hexo
+    expire: 60*1
+    # cors: http://localhost:3000
+
+# Local search
+local_search:
+  enable: true
