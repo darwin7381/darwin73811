@@ -1,0 +1,128 @@
+.label-search {
+    cursor: pointer;
+    letter-spacing: 15px;
+    padding-left: 20px;
+    font-weight: 5;
+}
+
+.navbar-brand b {
+    text-align: center;
+    font-size: 20px;
+}
+
+.opener-left-menu {
+    float: left;
+    padding: 20px;
+    background-color: #2196F3;
+    padding-bottom: 11px;
+    color: #C62828;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 9px 0px 0px #2196F3, 0 -9px 0px 0px #2196F3, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 9px 0px 0px #2196F3, 0 -9px 0px 0px #2196F3, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
+    -ms-box-shadow: 0px 9px 0px 0px #2196F3, 0 -9px 0px 0px #2196F3, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
+    -o-box-shadow: 0px 9px 0px 0px #2196F3, 0 -9px 0px 0px #2196F3, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 9px 0px 0px #2196F3, 0 -9px 0px 0px #2196F3, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
+}
+
+.user-nav
+.opener-left-menu.is-open {
+    position: relative;
+    padding: 10px;
+    z-index: 2;
+    width: 50px;
+    height: 28px;
+    top: 15px;
+}
+
+.opener-left-menu {
+    position: relative;
+    padding: 10px;
+    z-index: 2;
+    width: 50px;
+    height: 28px;
+}
+
+#left-menu .sub-left-menu .time h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 35px;
+    font-weight: 500;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #918C8C;
+    display: inline-block;
+}
+
+.navbar-brand.col-md-2 {
+    margin-left: 0px;
+}
+
+.time h3 {
+    font-weight: 400;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.time p {
+    margin-bottom: 0px;
+}
+
+.timezone {
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 5px;
+    font-size: 10px;
+    margin-bottom: 0px;
+}
+
+.timezone_select {
+    text-align: center;
+    margin: 0px;
+    margin-left: 15px;
+}
+
+.nav_price {
+    overflow: hidden;
+    height: 50px;
+}
+
+.realtime_price {
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5px;
+    padding: 0px;
+    font-size: 15px;
+
+    /*border: solid 1px black;*/
+}
+
+.widget_price {
+    font-size: 15px;
+}
+
+.quick_info {
+    height: 70px;
+    border: solid 2px gray;
+}
+
+.tree-toggle.nav-header {}
+
+.tree > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 15px;
+}
+
+#left-menu .sub-left-menu a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 32px;
+    font-size: 14px;
+}
